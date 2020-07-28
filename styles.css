@@ -1,19 +1,16 @@
 .one {
-  grid-row: 1;
-  grid-column: 2;
+  grid-row: 2;
   align-self: flex-end;
   justify-self: center;
 }
 .two {
-  grid-row: 2;
-  grid-column: 2;
+  grid-row: 3;
   align-self: center;
   justify-self: center;
 }
 .three {
   display: flex;
-  grid-row: 3;
-  grid-column: 2;
+  grid-row: 4;
   justify-self: center;
 }
 #googleLogo {
@@ -38,9 +35,20 @@
 #searchBar:hover {
   box-shadow: 5px #5f6368;
 }
+.header {
+  display: flex;
+  justify-self: end;
+}
+.headerNav {
+  padding: 10px;
+  margin: 2px;
+  height: fit-content;
+}
+.signIn {
+  background-color: cornflowerblue;
+}
 .wrapper {
   height: 100%;
   display: grid;
-  grid-template-rows: 2fr 0.5fr 3fr;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.5fr 2fr 0.5fr 3fr;
 }
