@@ -1,5 +1,23 @@
+.one {
+  grid-row: 1;
+  grid-column: 2;
+  align-self: flex-end;
+  justify-self: center;
+}
+.two {
+  grid-row: 2;
+  grid-column: 2;
+  align-self: center;
+  justify-self: center;
+}
 .three {
   display: flex;
+  grid-row: 3;
+  grid-column: 2;
+  justify-self: center;
+}
+#googleLogo {
+  align-self: center;
 }
 .button {
   padding: 10px;
@@ -7,6 +25,7 @@
   background-color: #f5f5f5;
   color: #5f6368;
   border-radius: 4px;
+  height: fit-content;
 }
 .button:hover {
   color: black;
@@ -16,8 +35,12 @@
   width: 400px;
   height: 40px;
 }
+#searchBar:hover {
+  box-shadow: 5px #5f6368;
+}
 .wrapper {
   height: 100%;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 2fr 0.5fr 3fr;
+  grid-template-columns: repeat(3, 1fr);
 }
